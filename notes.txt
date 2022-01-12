@@ -1,0 +1,17 @@
+
+1. The  "type": "module", option in the package.json file tells node that it is a module based app an you can use imports
+2. The "start": "node index.js" entry in scripts section of package.json, tells node that wheneve I run    
+   nmp start
+   it will run 
+   node index.js 
+   to start the application
+
+
+3. In order to use fetch, you must install the package.
+ npm install node-fetcht
+
+4. In order to avoid issues  with restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served.[1]
+npm install cors 
+You must add this to main app
+import cors from 'cors'
+app.uses(cors)
