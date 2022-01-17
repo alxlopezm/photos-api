@@ -9,7 +9,9 @@
   });  
 
   const request_headers = {
-    "Authorization": "876JHG563492ad6f917000010000016c9626f0f7f847d097e4832397219d3676UKFJYGVHf867rFUTFGHCJ8JHV"
+    "Content-Type": "application/json", 
+    "Authorization": "876JHG563492ad6f917000010000016c9626f0f7f847d097e4832397219d3676UKFJYGVHf867rFUTFGHCJ8JHV",
+
   };
 
   var options = 
