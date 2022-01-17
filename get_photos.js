@@ -29,7 +29,7 @@
       console.log('Loooking for photos of '+request.query.photo_for);
       const pexels_api_url = "https://api.pexels.com/v1/search?query=nature&per_page=1";
       const fetch_response = await fetch(pexels_api_url, {method: 'GET', headers : request_headers,port: 8888,host: '127.0.0.1', agent:httpsAgent});
-      console.log('Got fetch response!');
+      console.log('Got fetch response from API!');
       const json_response  = await fetch_response.text();
       console.log('Converted it to Text');
       console.log(`Resp:${json_response}`);
