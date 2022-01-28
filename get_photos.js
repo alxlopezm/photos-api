@@ -25,8 +25,7 @@ import OWGPhoto        from "./OWGPhoto.js";
       OWGPhotosList.OWGPhotos = OWGPhotosList.addPhoto(OWGPhotosList.OWGPhotos,owgPhoto);
     };
     const kk2=  JSON.stringify(OWGPhotosList.OWGPhotos);
-    console.log(kk2);
-     
+    console.log(kk2);     
   }
 
 
@@ -46,7 +45,6 @@ async function get_unsplash_photos(request)
                                      parse_unsplash(res.data);
                                      })
                       .catch(err => console.log(err));
-
   }
 
  /**
@@ -126,7 +124,13 @@ async function get_pexels_photos(request)
                        .catch(err => console.log(err)); 
  };
 
-
+/**
+ * Gets all photo results, parses them and adds parsed content to array
+ * 
+ * @param  request  HTTP Request object
+ * @param  response HTPP Response object
+ * @returns void
+ */
 async function get_all_photos(request,response)
   {
    OWGPhotosList.OWGPhotos.splice(0,OWGPhotosList.OWGPhotos.length)
