@@ -11,4 +11,4 @@ function get_photo(req,res)
           
    } 
 
-   export default get_photo;
+export default get_photo;

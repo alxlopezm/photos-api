@@ -1,1 +1,1 @@
-GET http://localhost:3000/v2/photos/search?photo_for=nature
+GET http://localhost:3000/v1/photos/search?photo_for=cuneta
